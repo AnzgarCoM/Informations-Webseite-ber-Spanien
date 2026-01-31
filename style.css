@@ -505,4 +505,77 @@ footer {
     font-size: 14px;
   }
 }
+/* =========================
+   DARK MODE BUTTON
+   ========================= */
+.darkmode-btn {
+  position: fixed;
+  top: 60px;
+  right: 15px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #222;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.darkmode-btn:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   DARK MODE STYLES
+   ========================= */
+body.dark {
+  background: linear-gradient(to bottom, #121212, #1e1e1e);
+  color: #eee;
+}
+
+/* Boxen */
+body.dark .spanien-info-box,
+body.dark .spanien-infos,
+body.dark .essen-spanien-box,
+body.dark .essen-diagramm-box,
+body.dark .spanien-timeline-box,
+body.dark .fussball-spanien-box {
+  background: #222;
+  color: #eee;
+  border-color: #ff9900;
+}
+
+/* Tabelle */
+body.dark .stadt-tabelle-spanien {
+  background: #2a2a2a;
+}
+
+/* Links */
+body.dark a {
+  color: #ffcc66;
+}
+
+body.dark a:hover {
+  color: #ff9900;
+}
+
+/* Balkendiagramm */
+body.dark .bar {
+  background: #444;
+}
+
+body.dark .bar-fill {
+  background: #ff9900;
+}
+
+/* Button im Dark Mode */
+body.dark .darkmode-btn {
+  background: #ffcc66;
+  color: #000;
+}
+
 

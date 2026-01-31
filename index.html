@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 </head>
 <body>
+  <button id="darkModeToggle" class="darkmode-btn">
+  🌙 Dunkelmodus
+</button>
 
 <div class="spanien-marquee">
   <span>🌌 AnzgarCoM • España• Comido • Fútbol • Spanien • Essen • Fußball 🌌</span>
@@ -161,4 +164,17 @@
 </footer>
 
 </body>
+<script>
+  const button = document.getElementById("darkModeToggle");
+
+  button.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      button.textContent = "☀️ Hellmodus";
+    } else {
+      button.textContent = "🌙 Dunkelmodus";
+    }
+  });
+</script>
 </html>
