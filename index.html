@@ -113,7 +113,7 @@
   <p>Spanien hat viele leckere Gerichte! Hier sind einige typische Speisen, die du ausprobieren kannst:</p>
   <P>Klick auf die Bilder um zu den Rezepten zu gelangen</p>
   <div class="essen-bilder">
-    <a href="https://www.oelmuehle-solling.de/paella.html" target="_blank"><img src="paella.jpg" alt="Paella"></a>
+    <a href="https://www.oelmuehle-solling.de/paella.html" target="_blank"><img src="Paella.jpg" alt="Paella"></a>
     <a href="https://www.chefkoch.de/magazin/artikel/621281389-tapas-selber-machen-50-leckere-rezepte" target="_blank"><img src="tapas.jpg" alt="Tapas"></a>
     <a href="https://www.daskochrezept.de/rezepte/spanische-churros-das-original-einfach-selber-machen" target="_blank"><img src="churros.jpg" alt="Churros"></a>
   </div>
@@ -162,19 +162,20 @@
 <footer>
   <p style="text-align:center;">Webseite von <b>AnzgarCoM</b></p>
 </footer>
-<script>
-  const button = document.getElementById("darkModeToggle");
 
-  button.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
+  <script>
+    const button = document.getElementById("darkModeToggle");
 
-    if (document.body.classList.contains("dark")) {
-      button.textContent = "☀️ Hellmodus";
-    } else {
-      button.textContent = "🌙 Dunkelmodus";
-    }
-  });
-</script>
+    button.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        button.textContent = "☀️ Hellmodus";
+      } else {
+        button.textContent = "🌙 Dunkelmodus";
+      }
+    });
+  </script>
+
 </body>
-
 </html>
