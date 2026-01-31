@@ -379,3 +379,130 @@ footer {
   font-size: 16px;
   color: #333;
 }
+/* =========================
+   MOBILE VERSION
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Allgemein */
+  body {
+    padding: 10px;
+  }
+
+  /* Titel */
+  .titulo {
+    font-size: 36px;
+    margin-top: 80px; /* wegen Marquee */
+  }
+
+  .subtitulo {
+    font-size: 22px;
+  }
+
+  /* Marquee */
+  .spanien-marquee span {
+    font-size: 14px;
+  }
+
+  /* Info-Box */
+  .spanien-info-box {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .spanien-flagge {
+    width: 50px;
+    top: -8px;
+    right: -8px;
+  }
+
+  /* Spanien Infos */
+  .spanien-infos {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .spanien-karte {
+    width: 100%;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-item::before {
+    left: -28px;
+  }
+
+  .timeline-content {
+    font-size: 14px;
+  }
+
+  /* Städte Tabelle → mobilfreundlich */
+  .stadt-tabelle-spanien {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .stadt-tabelle-spanien table,
+  .stadt-tabelle-spanien thead,
+  .stadt-tabelle-spanien tbody,
+  .stadt-tabelle-spanien th,
+  .stadt-tabelle-spanien td,
+  .stadt-tabelle-spanien tr {
+    display: block;
+    width: 100%;
+  }
+
+  .stadt-tabelle-spanien th {
+    display: none;
+  }
+
+  .stadt-tabelle-spanien td {
+    border: none;
+    padding: 10px 0;
+  }
+
+  .stadt-foto {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Essen */
+  .essen-spanien-box {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .essen-bilder img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Balkendiagramm */
+  .bar-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .bar-value {
+    text-align: right;
+  }
+
+  /* Fußball */
+  .fussball-spanien-box {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .fussball-bilder-links {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 14px;
+  }
+}
+
